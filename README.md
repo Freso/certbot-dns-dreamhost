@@ -5,7 +5,7 @@ This plugin is [published on pypi](https://pypi.org/project/certbot-dns-dreamhos
 
 ## Installation
 
-### via `pip`
+### Via `pip`
 
 In order to use a `pip` installed plugin on certbot, you also have to install certbot via `pip`. See the [instructions on installing Certbot via `pip` on Certbot's website](https://certbot.eff.org/instructions?ws=other&os=pip).
 
@@ -13,11 +13,11 @@ To install this plugin you can use `sudo /opt/certbot/bin/pip install certbot-dn
 
 ## Usage
 
-`certbot-dns-dreamhost` needs a credentials file to access DreamHost API. Make sure this file can only be accessed by root, since anyone with this credentials may delete all your DNS records.
+`certbot-dns-dreamhost` needs a credentials file to access the DreamHost API. Make sure this file can only be accessed by root, since anyone with these credentials may delete all your DNS records.
 
-1. Get your API key from DreamHost with permission for `dns-*`. You can get it on the [Web Panel API page](https://panel.dreamhost.com/?tree=home.api)
+1. Get your API key from DreamHost with permission for `dns-*`. You can get it on the [Web Panel API page](https://panel.dreamhost.com/?tree=home.api).
 
-2. Create your credentials file: `/etc/letsencrypt/dns-dreamhost.ini` and enter your API key and the base URL for DreamHost's API (usualy `https://api.dreamhost.com/`), as below (keep the variables names):
+2. Create your credentials file: `/etc/letsencrypt/dns-dreamhost.ini` and enter your API key and the base URL for DreamHost's API (usually `https://api.dreamhost.com/`), as below (keep the variables names):
 ```ini
 dns_dreamhost_baseurl = "<api_base_url>"
 dns_dreamhost_api_key = "<api_key>"
